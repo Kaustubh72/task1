@@ -1,0 +1,34 @@
+<!DOCUMENT html>
+<html lang="en">
+<body> 
+<script>
+var text = prompt("Please enter here");
+var i=0,sp=0,v=0,c=0,spc=0;
+document.write("\n Your Text= ",text);
+text=text.toLowerCase();
+for(i=0;i<text.length;i++)
+{
+  if(text[i]=='a'||text[i]=='e'||text[i]=='i'||text[i]=='o'||text[i]=='u')
+  {
+    v++;
+  }
+   else if(text[i]>='a' && text[i]<='z')
+   {
+    c++;
+   }
+   else if(text[i]==' ')
+   {
+    sp++;
+   }
+   else
+   {
+    spc++;
+   }
+}
+   document.write("\n Consonents = ",c);
+   document.write("\n Vowels = ",v);
+   document.write("\n Spaces = ",sp);
+   document.write("\n Special Characters = ",spc);
+</script>
+</body>
+</html>
